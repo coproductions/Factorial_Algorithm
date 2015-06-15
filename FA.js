@@ -5,6 +5,7 @@ function factorial(x){
   if(x <= 0){
     return 0;
   }
+
   var total = 1;
 
   var iterate = function(x){
@@ -15,6 +16,7 @@ function factorial(x){
     x--;
    iterate(x);
   };
+
   iterate(x);
   return total;
 };
