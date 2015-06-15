@@ -6,19 +6,11 @@ function factorial(x){
     return 0;
   }
 
-  var total = 1;
-
-  var iterate = function(x){
     if(x===1){
-      return;
+      return x;
       }
-    total *= x;
-    x--;
-   iterate(x);
-  };
 
-  iterate(x);
-  return total;
+    return x * factorial(x-1);
 };
 
 module.exports = {
