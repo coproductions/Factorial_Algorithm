@@ -1,7 +1,7 @@
 var chai = require('chai');
 chai.should();
 
-var FA = require('spec/FA_test-spec.js');
+var FA = require('../FA.js');
 
 describe('Factorial Algorithm', function () {
 
